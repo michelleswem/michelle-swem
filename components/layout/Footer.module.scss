@@ -1,0 +1,57 @@
+@import "../../sass/abstracts/variables";
+.footer {
+  padding: 5rem 0;
+  font-size: 1.6rem;
+  color: $color-secondary;
+
+  &__logobox {
+    text-align: center;
+  }
+
+  &__navigation {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  &__link {
+    color: currentColor;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $color-primary;
+  }
+  &__socials {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  &__icon {
+    &:not(:last-child) {
+      padding-right: 1rem;
+      display: inline-block;
+    }
+  }
+
+  svg {
+    fill: $color-secondary;
+    transition: all 0.2s ease;
+    &:hover {
+      fill: $color-white;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+  }
+}

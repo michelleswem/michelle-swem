@@ -1,0 +1,50 @@
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+@import "../../sass/abstracts/variables";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 3rem 8vmin 3rem 4vmin;
+}
+
+.logo-box {
+  float: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  max-height: 3rem;
+
+  &__name {
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: -1rem;
+  }
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      padding-right: 1.5rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: $color-secondary;
+    font-weight: 600;
+  }
+}

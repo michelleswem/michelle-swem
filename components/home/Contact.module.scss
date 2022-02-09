@@ -1,0 +1,19 @@
+@import "../../sass//abstracts/variables";
+.section-contact {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-primary, 0.75),
+      rgba($color-primary, 0.75)
+    ),
+    url(../../public/assets/can-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact {
+  width: 45vw;
+  background-color: rgba($color-black, 0.25);
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  float: right;
+}

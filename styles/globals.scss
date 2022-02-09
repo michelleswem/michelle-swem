@@ -1,0 +1,63 @@
+/**********
+* PROJECT BASICS
+**********/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: "lato", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  color: $color-grey-light;
+  background-color: $color-primary;
+}
+
+section {
+  &:not(:first-of-type) {
+    padding: 12rem 0;
+    position: relative;
+    z-index: 1000;
+    font-size: 1.8rem;
+  }
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+::selection {
+  background-color: $color-secondary;
+  color: $color-secondary;
+}
+
+.row {
+  width: 114rem;
+  margin: 0 auto;
+  @include clearfix;
+}
+.col {
+  width: calc((100% - 6rem) / 2);
+  float: left;
+  &:not(:last-child) {
+    margin-right: 6rem;
+  }
+}

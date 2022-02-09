@@ -1,0 +1,39 @@
+/* ----------------------------------------------- */
+/* HEADER-MASTER */
+/* ----------------------------------------------- */
+@import "../../sass/abstracts/variables";
+.master-header {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba($color-primary, 0.75),
+      rgba($color-primary, 0.75)
+    ),
+    url(../../public/assets/back-cover.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: $color-white;
+  align-items: center;
+
+  &__box {
+    margin: 0 auto;
+    max-width: 114rem;
+    text-align: center;
+    letter-spacing: 0px;
+  }
+
+  &__primary {
+    margin-bottom: 4rem;
+    line-height: 1.4;
+    font-size: 4rem;
+  }
+
+  &__secondary {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+}
